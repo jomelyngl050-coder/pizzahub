@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC>
+<HTML>
+<HEAD>
+<TITLE>My Picture Gallery</TITLE>
+</HEAD>
+<STYLE>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: linear-gradient(135deg, #dce6f7, #c7d6f0);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .window {
+    background: #ffffff;
+    border: 1px solid #6f9bd1;
+    border-radius: 4px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    max-width: 560px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .titlebar {
+    background: linear-gradient(#6f9bd1, #4c7cb5);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+  }
+  .content {
+    padding: 30px 20px 34px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 24px;
+    font-size: clamp(18px, 4vw, 22px);
+    letter-spacing: 1px;
+    color: #222;
+  }
+  h1 .highlight {
+    color: #d21f1f;
+    font-style: italic;
+  }
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .grid a {
+    display: block;
+    line-height: 0;
+    border: 3px solid #111;
+  }
+  .grid img {
+    width: 110px;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+  }
+</STYLE>
+<BODY>
+<div class="window">
+    <div class="titlebar">My Gallery</div>
+    <div class="content">
+      <h1>MY <span class="highlight">PICTURE</span> GALLERY</h1>
+      <div class="grid">
+        <a href="https://www.instagram.com" target="_blank"><img src="https://stacycorwin.com/wp-content/uploads/2018/12/sunrise-sunset.jpg"></a>
+        <a href="https://www.reddit.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/006/599/481/non_2x/snowy-mount-with-colorful-sky-on-segla-mountain-in-senja-island-on-winter-at-norway-photo.jpg"></a>
+        <a href="https://www.tiktok.com" target="_blank"><img src="https://news.ucsb.edu/sites/default/files/images/2017/iStock-603903118.jpg"></a>
+        <a href="https://www.netflix.com" target="_blank"><img src="https://www.timeforkids.com/wp-content/uploads/2024/01/coral_1.jpg?w=1024"></a>
+      </div>
+    </div>
+  </div>
+</BODY>
+</HTML>

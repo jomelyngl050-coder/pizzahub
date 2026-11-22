@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f8;
+    color: #392344;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #9b4dca, #e754a6);
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #f5b8df;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #64247e;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #d12b91;
+}
+
+/* SECTIONS */
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 35px;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(120, 50, 140, 0.12);
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    color: #9b4dca;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #ed9bd0;
+    padding-bottom: 10px;
+}
+
+section p {
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+/* ORGANIZATION */
+.organization {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.org-box {
+    background-color: #fce2f2;
+    border: 2px solid #b45acb;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.org-box h3 {
+    color: #8739a5;
+    margin-bottom: 8px;
+}
+
+/* PRODUCT */
+.product {
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.product img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    color: #9b4dca;
+    margin: 12px 0;
+}
+
+.price {
+    color: #d12b91;
+    font-size: 24px;
+}
+
+/* SERVICES */
+.service {
+    background-color: #fff0f8;
+    border-left: 5px solid #b45acb;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 5px;
+}
+
+.service h3 {
+    color: #8739a5;
+    margin-bottom: 8px;
+}
+
+/* FEEDBACK FORM */
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #d9a3dc;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+button {
+    background-color: #a044bd;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d12b91;
+}
+
+#message {
+    color: #8739a5;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #8739a5, #d12b91);
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    section {
+        width: 92%;
+        padding: 22px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 13px;
+    }
+
+    .organization {
+        flex-direction: column;
+    }
+}
+
+/* PORTFOLIO ACTIVITIES AND EXERCISES */
+
+.portfolio-category {
+    margin-top: 45px;
+}
+
+.portfolio-category h2 {
+    color: #9b4dca;
+    margin-bottom: 10px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 205px));
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.project-card {
+    width: 100%;
+    min-height: 120px;
+    background-color: #fff0f8;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ed8bd0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(120, 40, 120, 0.10);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(120, 40, 120, 0.18);
+}
+
+.project-card h4 {
+    color: #963db5;
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    background-color: #a43fc0;
+    color: white;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.project-card a:hover {
+    background-color: #76268f;
+}
